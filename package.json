@@ -1,0 +1,26 @@
+{
+  "name": "strict-repo",
+  "version": "1.0.0",
+  "description": "This is a demo repo to check and practice strict rules for type safety and better coding practice.",
+  "main": "",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+   "lint:proj1": "cd proj1 && npm run lint",
+    "lint:proj2": "cd proj2 && npm run lint",
+    "lint": "npm run lint:proj1 && npm run lint:proj2",
+    "prepare": "husky"
+  },
+  "keywords": [
+    "Strict-Repo"
+  ],
+  "author": "Shahariar Niloy",
+  "license": "ISC",
+  "devDependencies": {
+    "@commitlint/cli": "^19.5.0",
+    "@commitlint/config-conventional": "^19.5.0",
+    "husky": "^9.1.6"
+  }
+}
