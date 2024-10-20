@@ -1,4 +1,5 @@
-{
+const path = require("path");
+module.exports ={
    "extends": [
     "next/core-web-vitals",
     "eslint:recommended",
@@ -18,8 +19,8 @@
     "ecmaFeatures": {
       "jsx": true
     },
-    "project": "./tsconfig.json",
-    "tsconfigRootDir": "."
+    "project": path.join(__dirname, "tsconfig.json"),
+    tsconfigRootDir:__dirname
   },
   "env": {
     "browser": true,
